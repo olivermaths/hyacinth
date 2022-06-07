@@ -1,7 +1,7 @@
 #ifndef _HYACINTH_APPLICATION
 #define _HYACINTH_APPLICATION
-#include "Core.hpp"
 #include "Window.hpp"
+#include <iostream>
 namespace hct
 {
     class Application
@@ -14,6 +14,7 @@ namespace hct
         Application();
         ~Application();
         void run();
+         void onEvent(Event &event);
     };
 
     // to be defined in client
